@@ -1,0 +1,38 @@
+.sec1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+
+
+    &::before {
+        content: "";
+        background-color: rgb(4, 4, 75);
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .sec1-img {
+        width: 50%;
+    }
+
+    img {
+        position: absolute;
+        width: 90rem;
+        right: 0;
+
+
+    }
+
+    .sec1-text-wrap {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        position: absolute;
+    }
+}
