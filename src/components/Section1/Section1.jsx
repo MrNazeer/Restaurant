@@ -11,7 +11,9 @@ export default function Section1() {
           <p className="btn1">See Our Menu</p>
           <p className="btn1">Special Offers</p>
         </div>
-        <div className="sec1-img">{/* <img src={hero} alt="bg-img" /> */}</div>
+        <div className="sec1-img">
+          <img src={hero} alt="bg-img" />
+        </div>
       </div>
     </section>
   );

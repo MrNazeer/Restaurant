@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   padding-bottom: 10rem;
 }
 .sec1::before {
@@ -14,18 +15,44 @@
   bottom: 0;
   z-index: -1;
 }
-.sec1 .sec1-img {
-  width: 50%;
-}
-.sec1 img {
-  position: absolute;
-  width: 90rem;
-  right: 0;
-}
-.sec1 .sec1-text-wrap {
-  width: 50%;
+.sec1 .sec1-cont {
   display: flex;
-  justify-content: center;
-  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.sec1 .sec1-cont .sec1-img {
+  height: 100%;
+  width: 10rem;
+  background-color: brown;
+  flex: 1;
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+.sec1 .sec1-cont img {
   position: absolute;
+  width: 70rem;
+  height: 100%;
+  right: 1rem;
+}
+.sec1 .sec1-cont .sec1-text-wrap {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  left: 10rem;
+}
+.sec1 .sec1-cont .sec1-text-wrap .title {
+  text-align: left;
+  font-size: 7rem;
+  padding: 0 5rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  color: white;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
