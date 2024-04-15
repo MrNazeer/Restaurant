@@ -58,19 +58,67 @@
       align-items: center;
       z-index: 1;
       position: relative;
-      left: 16rem;
+      left: 20rem;
       line-height: 1.2;
+      // padding: 0 4rem;
       // background-color: chartreuse;
 
       .title {
+        font-family: "Oswald", sans-serif, sans-serif;
+        width: 60rem;
         text-align: left;
-        font-size: 7rem;
-        padding: 0 1rem;
+        font-size: 8rem;
+        padding: 0 5rem;
         padding-top: 10rem;
-        padding-bottom: 5rem;
+        // padding-bottom: 5rem;
         // padding-right: 2rem;
         color: white;
-        font-weight: 600;
+        font-weight: 500;
+
+        @media (min-height: 620px) {
+          // padding-bottom: 20rem; // Adjust the padding value as needed
+          padding: 0 3rem;
+          // padding-top: -13rem;
+        }
+      }
+
+      .btn-wrap {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        gap: 1rem;
+        padding-top: 5rem;
+        padding-left: 1.7rem;
+
+        .btn {
+          font-size: 1.7rem;
+          color: white;
+          padding: 1.5rem 3rem;
+          border: 1px solid white;
+          border-radius: 4px;
+        }
+
+        .btn1 {
+          background-color: white;
+          text-align: center;
+          color: #120078;
+
+          &:hover {
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+          }
+        }
+
+        .btn2 {
+          text-align: center;
+        }
+
+        .btn2:hover {
+          background-color: white;
+          color: #120078;
+          cursor: pointer;
+        }
       }
     }
   }
