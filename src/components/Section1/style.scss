@@ -2,12 +2,18 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
-  padding-bottom: 10rem;
+  height: 96%;
+  box-sizing: content-box;
+  margin-bottom: 2rem;
+  padding-bottom: 0rem;
+
+  @media (max-height: 615px) {
+    padding-bottom: 20rem; // Adjust the padding value as needed
+  }
 
   &::before {
     content: "";
-    background-color: rgb(4, 4, 75);
+    background-color: #120078;
     width: 70%;
 
     position: absolute;
@@ -27,7 +33,7 @@
     .sec1-img {
       height: 100%;
       width: 10rem;
-      background-color: brown;
+      // background-color: brown;
       flex: 1;
       display: flex;
       // align-items: center;
@@ -38,9 +44,9 @@
 
     img {
       position: absolute;
-      width: 70rem;
-      height: 100%;
-      right: 1rem;
+      width: 90rem;
+      height: 59.9rem;
+      right: 0;
     }
 
     .sec1-text-wrap {
@@ -52,13 +58,14 @@
       align-items: center;
       z-index: 1;
       position: relative;
-      left: 10rem;
+      left: 16rem;
+      line-height: 1.2;
       // background-color: chartreuse;
 
       .title {
         text-align: left;
         font-size: 7rem;
-        padding: 0 5rem;
+        padding: 0 1rem;
         padding-top: 10rem;
         padding-bottom: 5rem;
         // padding-right: 2rem;

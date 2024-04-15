@@ -7,7 +7,7 @@ export default function Section1() {
     <section className="sec1">
       <div className="sec1-cont">
         <div className="sec1-text-wrap">
-          <p className="title">YOU DON'T NEED A SILVER FORK TO EAT GOOD FOOD.</p>
+          <h1 className="title">YOU DON'T NEED A SILVER FORK TO EAT GOOD FOOD.</h1>
           <p className="btn1">See Our Menu</p>
           <p className="btn1">Special Offers</p>
         </div>
